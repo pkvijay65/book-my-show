@@ -1,5 +1,11 @@
 package com.project.bookmyshow.models;
 
-public class Language extends BaseModel {
-
+public enum Language {
+  ENGLISH,
+  HINDI,
+  TAMIL,
+  TELUGU,
+  KANNADA,
+  MALAYALAM,
+  OTHER,
 }
