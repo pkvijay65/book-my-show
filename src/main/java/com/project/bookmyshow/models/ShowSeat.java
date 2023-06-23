@@ -7,6 +7,8 @@ import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Entity
@@ -15,6 +17,8 @@ public class ShowSeat extends BaseModel {
   private Show show;
   @ManyToOne
   private Seat seat;
+
+  private LocalDateTime lockedAt;
   @Enumerated(EnumType.ORDINAL)
   private ShowSeatStatus status;
 }
