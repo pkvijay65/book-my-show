@@ -18,6 +18,6 @@ public class Show extends BaseModel {
   private LocalDate endTime;
   @ManyToOne
   private Movie movie;
-  @Enumerated(EnumType.STRING)
+  @Enumerated(EnumType.ORDINAL)
   private Language language;
 }

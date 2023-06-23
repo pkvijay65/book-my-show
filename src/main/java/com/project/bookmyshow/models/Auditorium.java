@@ -22,6 +22,6 @@ public class Auditorium extends BaseModel {
    *    - Drawback of EnumType.ORDINAL: if we add a new enum value in the middle of the enum,
    *      the ordinal value of all the subsequent enum values will change.
    */
-  @Enumerated(EnumType.STRING)
+  @Enumerated(EnumType.ORDINAL)
   private List<Feature> features;
 }

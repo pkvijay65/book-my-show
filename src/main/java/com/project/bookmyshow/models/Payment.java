@@ -11,13 +11,13 @@ import java.time.LocalTime;
 @Entity
 public class Payment extends BaseModel {
   private int amount;
-  @Enumerated(EnumType.STRING)
+  @Enumerated(EnumType.ORDINAL)
   private PaymentProvider paymentProvider;
   private LocalTime timeOfPayment;
   private String transactionId;
-  @Enumerated(EnumType.STRING)
+  @Enumerated(EnumType.ORDINAL)
   private PaymentStatus paymentStatus;
-  @Enumerated(EnumType.STRING)
+  @Enumerated(EnumType.ORDINAL)
   private PaymentType paymentType;
   @ManyToOne
   private Ticket ticket;
