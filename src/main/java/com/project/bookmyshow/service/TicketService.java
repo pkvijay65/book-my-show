@@ -48,7 +48,7 @@ public class TicketService {
     if (!show.isPresent()) {
       throw new InvalidArgumentException("Show not found for show Id: " + showId);
     }
-    List<ShowSeat> showSeats = showSeatRepository.findAllBySeatAndShow(seats, show.get());
+    List<ShowSeat> showSeats = showSeatRepository.findAllBySeatInAndShow(seats, show.get());
 
     for (ShowSeat showSeat : showSeats) {
       if (!showSeat.getStatus().equals(ShowSeatStatus.AVAILABLE)) {

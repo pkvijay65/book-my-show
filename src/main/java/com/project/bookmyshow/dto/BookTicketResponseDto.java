@@ -1,7 +1,11 @@
 package com.project.bookmyshow.dto;
 
-import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.List;
+@Getter
+@Setter
 public class BookTicketResponseDto {
   private int amount;
   private Long ticketId;
